@@ -190,3 +190,77 @@
 .btn-subscribe:hover {
       color: green;
 }
+
+/* About Section */
+.about-section {
+      background: #1A0B2E;
+      padding: 5rem 2rem;
+      text-align: center;
+}
+
+.about-container {
+      max-width: 1000px;
+      margin: 0 auto;
+}
+
+.about-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+}
+
+.about-description {
+      font-size: 1rem;
+      color: #ffffff;
+      line-height: 1.8;
+      margin-bottom: 20px;
+}
+
+.about-join {
+      font-size: 1rem;
+      color: #ffffff;
+      line-height: 1.8;
+      margin-bottom: 20px;
+}
+
+.stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+}
+
+.stat-item {
+      text-align: center;
+}
+
+.stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #00ff88;
+      margin-bottom: 0.5rem;
+}
+
+.stat-label {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+      .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+      }
+
+      .about-title {
+            font-size: 2rem;
+      }
+
+      .stat-number {
+            font-size: 2.5rem;
+      }
+}
