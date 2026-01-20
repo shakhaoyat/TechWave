@@ -20,11 +20,24 @@
 }
 
 .nav {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
       max-width: 1400px;
       margin: 0 auto;
+      gap: 2rem;
+}
+
+.logo {
+      justify-self: start;
+}
+
+.menu {
+      justify-self: center;
+}
+
+.button {
+      justify-self: end;
 }
 
 .logo h1 {
@@ -191,6 +204,96 @@
       color: green;
 }
 
+.hamburger-menu {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+}
+
+.hamburger-menu img {
+      width: 28px;
+      height: 28px;
+}
+
+/* Responsive Navigation and Hero */
+@media (max-width: 992px) {
+      .header {
+            padding: 1.5rem 2rem;
+      }
+
+      .nav {
+            grid-template-columns: 1fr auto 1fr;
+      }
+}
+
+@media (max-width: 576px) {
+      .header {
+            padding: 1rem 1.5rem;
+      }
+
+      .nav {
+            display: flex;
+            justify-content: space-between;
+      }
+
+      .menu {
+            display: none;
+      }
+
+      .button {
+            display: none;
+      }
+
+      .hamburger-menu {
+            display: block;
+      }
+
+      .logo h1 {
+            font-size: 1.5rem;
+      }
+
+      /* Hero Section Mobile */
+      .hero {
+            padding: 4rem 1.5rem;
+      }
+
+      .hero-circle-img {
+            width: 200px;
+            height: 200px;
+      }
+
+      .new-badge {
+            top: 5px;
+            right: 5px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.65rem;
+      }
+
+      .hero-title {
+            font-size: 2rem;
+      }
+
+      .hero-subtitle {
+            font-size: 0.95rem;
+            padding: 0 1rem;
+      }
+
+      .hero-buttons {
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+      }
+
+      .btn-spotify,
+      .btn-subscribe {
+            width: 100%;
+            max-width: 300px;
+            padding: 0.9rem 1.5rem;
+      }
+}
+
 /* About Section */
 .about-section {
       background: #1A0B2E;
@@ -250,18 +353,36 @@
       text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+      .about-section {
+            padding: 4rem 1.5rem;
+      }
+
       .stats-grid {
             grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+            gap: 1.5rem;
       }
 
       .about-title {
-            font-size: 2rem;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+      }
+
+      .about-description {
+            font-size: 0.95rem;
+            padding: 0 0.5rem;
+      }
+
+      .stat-item {
+            padding: 1.5rem 1rem;
       }
 
       .stat-number {
-            font-size: 2.5rem;
+            font-size: 2rem;
+      }
+
+      .stat-label {
+            font-size: 0.7rem;
       }
 }
 
@@ -370,14 +491,31 @@
       line-height: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+      .why-choose {
+            padding: 4rem 1.5rem;
+      }
+
       .features-grid {
             grid-template-columns: 1fr;
-            gap: 2rem;
+            gap: 1.5rem;
       }
 
       .why-title {
-            font-size: 2rem;
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+      }
+
+      .feature-card {
+            padding: 2rem 1.5rem;
+      }
+
+      .feature-title {
+            font-size: 1.25rem;
+      }
+
+      .feature-description {
+            font-size: 0.9rem;
       }
 }
 
@@ -510,7 +648,7 @@
       font-weight: 500;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
       .episodes-grid {
             grid-template-columns: repeat(2, 1fr);
       }
@@ -599,13 +737,13 @@
       font-weight: 500;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
       .vid-card {
             width: calc(50% - 14px);
       }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
       .vid-card {
             width: 100%;
       }
@@ -774,7 +912,7 @@
       margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
       .footer-bg {
             padding: 50px 20px 30px;
             margin-top: 60px;
@@ -795,7 +933,7 @@
       }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
       .host-card {
             flex-direction: column;
             text-align: center;
@@ -818,7 +956,7 @@
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
       .footer-top {
             grid-template-columns: 1fr;
             gap: 50px;
@@ -829,7 +967,7 @@
       }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
       .footer {
             padding: 60px 0 0;
             margin-top: 60px;
