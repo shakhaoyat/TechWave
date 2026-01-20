@@ -77,3 +77,116 @@
 .subscribe-btn:hover {
       color: green;
 }
+
+.btn {
+      display: flex;
+}
+
+.hero {
+      background: url('../assets/hero-bg.png') center/cover no-repeat,
+            linear-gradient(180deg, #1A0B2E 0%, #2D1B4E 100%);
+      padding: 6rem 2rem;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+}
+
+.hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+}
+
+.mic-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 2rem;
+}
+
+.hero-circle-img {
+      width: 300px;
+      height: 300px;
+      display: block;
+}
+
+.microphone-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 35%;
+      height: auto;
+}
+
+.new-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #00ff88;
+      color: #1A0B2E;
+      padding: 0.4rem 0.9rem;
+      border-radius: 15px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+}
+
+.hero-title {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+}
+
+.hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.btn-spotify {
+      background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 50%, #9100F8 100%);
+      color: #ffffff;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+
+}
+
+.btn-spotify:hover {
+      color: green;
+}
+
+.btn-subscribe {
+      background: transparent;
+      color: #00ff88;
+      border: 2px solid #00ff88;
+      padding: 0.9rem 2rem;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+}
+
+.btn-subscribe:hover {
+      color: green;
+}
