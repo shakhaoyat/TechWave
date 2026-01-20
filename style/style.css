@@ -380,3 +380,237 @@
             font-size: 2rem;
       }
 }
+
+/* Featured Episodes Section */
+.featured-section {
+      background: #1A0B2E;
+      padding: 5rem 2rem;
+}
+
+.featured-container {
+      max-width: 1200px;
+      margin: 0 auto;
+}
+
+.featured-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 60px;
+}
+
+.episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+}
+
+.episode-card {
+      background: rgba(53, 17, 101, 0.4);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.episode-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(0, 255, 136, 0.3);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.episode-thumbnail {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: #000;
+}
+
+.episode-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.episode-card:hover .episode-thumbnail img {
+      transform: scale(1.05);
+      opacity: 0.8;
+}
+
+.play-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.2);
+      opacity: 1;
+      transition: all 0.3s ease;
+}
+
+.play-button-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #F7E93F 0%, #FB09B4 50%, #9100F8 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 0, 128, 0.4);
+}
+
+.episode-card:hover .play-button-circle {
+      transform: scale(1.15);
+      box-shadow: 0 6px 20px rgba(255, 0, 128, 0.6);
+}
+
+.episode-content {
+      padding: 24px 20px;
+}
+
+.episode-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 12px;
+      line-height: 1.4;
+}
+
+.episode-description {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
+      margin-bottom: 16px;
+}
+
+.episode-duration {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+}
+
+.duration-dot {
+      width: 8px;
+      height: 8px;
+      background: #00ff88;
+      border-radius: 50%;
+}
+
+.duration-text {
+      font-size: 14px;
+      color: #00ff88;
+      font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+      .episodes-grid {
+            grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+/* Featured Episodes Section */
+.feature-epi {
+      background: #1A0B2E;
+      padding: 5rem 2rem;
+      max-width: 100%;
+      margin: 0 auto;
+}
+
+.feature-epi h2 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 60px;
+}
+
+.video-card-main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-left: 195px;
+      margin-right: 195px;
+}
+
+.vid-card {
+      background: rgba(53, 17, 101, 0.4);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      width: calc(33.333% - 14px);
+      flex: 0 0 auto;
+}
+
+.vid-card:hover {
+
+      border-color: rgba(0, 255, 136, 0.3);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.vid-card iframe {
+      width: 100%;
+      height: 220px;
+      display: block;
+      border: none;
+      border-radius: 20px 20px 0 0;
+}
+
+.vid-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 20px 20px 12px;
+      line-height: 1.4;
+}
+
+.vid-card p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
+      margin: 0 20px 16px;
+}
+
+.time {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 20px 20px;
+}
+
+.time img {
+      width: 16px;
+      height: 16px;
+      opacity: 0.7;
+}
+
+.time span {
+      font-size: 14px;
+      color: #00ff88;
+      font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+      .vid-card {
+            width: calc(50% - 14px);
+      }
+}
+
+@media (max-width: 768px) {
+      .vid-card {
+            width: 100%;
+      }
+
+      .feature-epi h2 {
+            font-size: 32px;
+      }
+}
