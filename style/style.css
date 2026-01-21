@@ -470,7 +470,7 @@
       margin: 0 auto;
 }
 
-/* Premium Audio Quality: 2 rows, 1 column */
+
 .audio-card {
       grid-column: 1;
       grid-row: 1 / 3;
@@ -481,25 +481,24 @@
 
 }
 
-/* Mobile Friendly: 1 row, 1 column */
+
 .mobile-card {
       grid-column: 2/4;
       grid-row: 1;
 }
 
-/* Global Community: 1 row, 1 column */
+
 .community-card {
       grid-column: 2/4;
       grid-row: 2;
 }
 
-/* Exclusive Interviews: 1 row, 2 columns */
+
 .interview-card {
       grid-column: 1 / 3;
       grid-row: 3;
 }
 
-/* Rich Resources: 1 row, 1 column */
 .resources-card {
       grid-column: 3;
       grid-row: 3;
